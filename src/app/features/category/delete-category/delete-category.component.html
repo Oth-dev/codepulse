@@ -1,0 +1,31 @@
+<div class="container">
+<h1>Are you sure you want to delete this Category</h1>
+<div class="mt-3">
+  <ng-container *ngIf="category">
+
+  <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+  <div class="mt-2">
+    <div class="mt-3">
+      <label for="categoryId" class="form-label">Category Id</label>
+      <input type="text" disabled id="categoryId" class="form-control" name="categoryId" value="{{category.id}}">
+    </div>
+    <div class="mt-3">
+      <label for="categoryName" class="form-label">Category Name</label>
+      <input type="text" disabled id="categoryName" class="form-control" name="categoryName" [(ngModel)]="category.name">
+    </div>
+    <div class="mt-3">
+      <label for="categoryUrlHandle" class="form-label">Category Url Handle</label>
+      <input type="text" disabled id="categoryUrlHandle" class="form-control" name="categoryUrlHandle" [(ngModel)]="category.urlHandle">
+    </div>
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary">Yes</button>
+      <a type="cancel"class="btn btn-secondary"  [routerLink]="['/admin/categories']">Cancel</a>
+
+    </div>
+
+  </div>
+</form>
+</ng-container>
+</div>
+
+</div>

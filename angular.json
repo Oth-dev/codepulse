@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "codepulse"
+  "defaultProject": "codepulse",
+  "cli": {
+    "analytics": "5e649295-9c44-461c-9202-4f490a52632e"
+  }
 }
