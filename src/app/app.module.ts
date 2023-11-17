@@ -13,6 +13,7 @@ import { DeleteCategoryComponent } from './features/category/delete-category/del
 import { BlogpostListComponent } from './features/blog-post/blogpost-list/blogpost-list.component';
 import { AddBlogpostComponent } from './features/blog-post/add-blogpost/add-blogpost.component';
 import { EditBlogpostComponent } from './features/blog-post/edit-blogpost/edit-blogpost.component';
+import { DeleteBlogpostComponent } from './features/blog-post/delete-blogpost/delete-blogpost.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { EditBlogpostComponent } from './features/blog-post/edit-blogpost/edit-b
     DeleteCategoryComponent,
     BlogpostListComponent,
     AddBlogpostComponent,
-    EditBlogpostComponent
+    EditBlogpostComponent,
+    DeleteBlogpostComponent
   ],
   imports: [
     BrowserModule,
@@ -35,4 +37,6 @@ import { EditBlogpostComponent } from './features/blog-post/edit-blogpost/edit-b
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }

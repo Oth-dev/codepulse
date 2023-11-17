@@ -1,3 +1,4 @@
+import { DeleteBlogPostRequest } from './../models/delete-blogpost-request.model';
 import { BlogPost } from './../models/blogpost.model';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -28,6 +29,9 @@ export class BlogPostsService {
   }
   getBlogPostById( id: string):Observable<BlogPost>{
     return this.http.get<BlogPost>(`${environment.apiBaseUrl}/api/BlogPosts/${id}`);
+  }
+  deleteteBlogPost( id: string, deleteBlogPostRequest:DeleteBlogPostRequest):Observable<BlogPost>{
+    return this.http.delete<BlogPost>(`${environment.apiBaseUrl}/api/BlogPosts/${id}`);
   }
 }
 

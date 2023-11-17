@@ -1,3 +1,4 @@
+import { DeleteBlogpostComponent } from './features/blog-post/delete-blogpost/delete-blogpost.component';
 import { AddBlogpostComponent } from './features/blog-post/add-blogpost/add-blogpost.component';
 import { BlogpostListComponent } from './features/blog-post/blogpost-list/blogpost-list.component';
 import { EditCategoryComponent } from './features/category/edit-category/edit-category.component';
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:'admin/blogposts/:id',
     component:EditBlogpostComponent
+  },
+  {
+    path:'admin/blogposts/delete/:id',
+    component:DeleteBlogpostComponent
   }
 ];
 
